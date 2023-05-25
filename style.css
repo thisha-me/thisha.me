@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Varela Round', sans-serif;
+}
+body{
+    background-image: url(img/bg-photo-light.png);
+}
+
+
+.bx{
+    font-size: 60px;
+    padding: 10px;
+    
+}
+
+.bx-light{
+    color: black;
+}
+
+.bx-dark{
+    color: #12fd92 !important;
+}
+
+.bx:hover{
+    color: darkgrey !important;
+}
+
+.container{
+    display: flex;
+    padding: 20px;
+
+}
+.col{
+    width: 50%;
+}
+.col-left{
+    float: left;
+    margin-top: 250px;
+    margin-left: 180px;
+}
+h1{
+    font-size: 46px;
+}
+
+.details{
+    font-size: 30px;
+}
+.col-right{
+    margin-top: 60px;
+    float: right;
+}
+
+#profile-pic{
+    width: 500px;
+}
+.hide{
+    display: none;
+}
+
+.change-color{
+    text-align: right;
+}
+@media screen and (max-width:1200px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .col{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        float: left;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-photo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
