@@ -58,6 +58,10 @@ section{
     cursor: default;
 }
 
+.logo img{
+    width: 8vw;
+}
+
 .navbar a{
     font-size: 1.7rem;
     color: var(--text-color);
