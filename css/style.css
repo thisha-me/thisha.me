@@ -39,7 +39,7 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 0 9%;   /*2rem 9%*/
     background-color: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -52,14 +52,13 @@ section{
 }
 
 .logo{
-    font-size: 2.5rem;
-    color: var(--text-color);
-    font-weight: 600;
     cursor: default;
+
 }
 
 .logo img{
-    width: 8vw;
+    width: 6vw;
+    top: 0;
 }
 
 .navbar a{
@@ -77,9 +76,11 @@ section{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
+    padding: 0 9%;
 }
 
 .home{
+    padding: 15rem 9% 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -407,6 +408,15 @@ input::-webkit-inner-spin-button {
     html{
         font-size: 55%;
     }
+    .portfolio-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .portfolio{
+        padding-bottom: 7rem;
+    }
 }
 
 @media (max-width:991px){
@@ -424,6 +434,15 @@ input::-webkit-inner-spin-button {
 
     .portfolio{
         padding-bottom: 7rem;
+    }
+
+    .portfolio-box p,
+    .portfolio-box p a{
+        font-size: 1.4rem;
+    }
+
+    .portfolio-box h4{
+        font-size: 2.6rem;
     }
 
     .contact{
@@ -497,37 +516,21 @@ input::-webkit-inner-spin-button {
     }
 
     .portfolio-container{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: 1fr;
     }
+
+    .portfolio-box p,
+    .portfolio-box p a{
+        font-size: 1.6rem;
+    }
+
+    .portfolio-box h4{
+        font-size: 3rem;
+    }
+
 
 }
 
-.cursor {
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--main-color);
-    background: var(--main-color);
-    border-radius: 50%;
-    position: absolute;
-    transition-duration: 200ms;
-    transition-timing-function: ease-out;
-    animation: cursorAnim 0.5s infinite alternate;
-    pointer-events: none;
-    z-index: 999;
-  }
-  
-  .cursor::after {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    border: 8px solid gray;
-    border-radius: 50%;
-    opacity: 0.5;
-    top: -8px;
-    left: -8px;
-    animation: cursorAnim2 0.5s infinite alternate;
-  }
   
   @keyframes cursorAnim {
     from {
@@ -597,4 +600,33 @@ input::-webkit-inner-spin-button {
     }
 
 }
+
+
+/* --------- cursor -------- */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim 0.5s infinite alternate;
+    pointer-events: none;
+    z-index: 999;
+  }
+  
+  .cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 0.5s infinite alternate;
+  }
 
