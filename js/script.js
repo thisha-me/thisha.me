@@ -9,9 +9,32 @@ window.addEventListener("load",()=>{
 let menuIcon=document.querySelector("#menu-icon");
 let navbar=document.querySelector(".navbar");
 
+
 menuIcon.onclick=()=>{
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
+}
+
+//------------------------ switch theme----------------------------------
+var icon=document.getElementById('sw-icon');
+
+window.onload=()=>{
+    document.body.classList.add("dark-theme");
+    document.body.classList.remove("light-theme");
+}
+
+icon.onclick=()=>{
+    if(icon.classList.contains('bxs-sun')){
+        icon.classList.remove('bxs-sun');
+        icon.classList.add('bxs-moon');
+        document.body.classList.add("light-theme");
+        document.body.classList.remove("dark-theme");
+    }else{
+        icon.classList.add('bxs-sun');
+        icon.classList.remove('bxs-moon');
+        document.body.classList.add("dark-theme");
+        document.body.classList.remove("light-theme");
+    }
 }
 
 // --------------------Scroll section active link-----------------------
