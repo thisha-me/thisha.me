@@ -91,24 +91,24 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 
 
 //------------------------ switch theme----------------------------------
-var icon=document.getElementById('sw-icon');
+// var icon=document.getElementById('sw-icon');
 
-icon.onclick=()=>{
-    if(icon.classList.contains('bxs-sun')){
-        icon.classList.remove('bxs-sun');
-        icon.classList.add('bxs-moon');
-        document.body.classList.add("light-theme");
-        document.body.classList.remove("dark-theme");
-    }else{
-        icon.classList.add('bxs-sun');
-        icon.classList.remove('bxs-moon');
-        document.body.classList.add("dark-theme");
-        document.body.classList.remove("light-theme");
-    }
-}
+// icon.onclick=()=>{
+//     if(icon.classList.contains('bxs-sun')){
+//         icon.classList.remove('bxs-sun');
+//         icon.classList.add('bxs-moon');
+//         document.body.classList.add("light-theme");
+//         document.body.classList.remove("dark-theme");
+//     }else{
+//         icon.classList.add('bxs-sun');
+//         icon.classList.remove('bxs-moon');
+//         document.body.classList.add("dark-theme");
+//         document.body.classList.remove("light-theme");
+//     }
+// }
 
-window.onload=()=>{
-    document.body.classList.add("dark-theme");
-    document.body.classList.remove("light-theme");
-}
+// window.onload=()=>{
+//     document.body.classList.add("dark-theme");
+//     document.body.classList.remove("light-theme");
+// }
 
