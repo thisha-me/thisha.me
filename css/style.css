@@ -665,6 +665,62 @@ input::-webkit-inner-spin-button {
 
 }
 
+/* thank you page */
+
+.thank-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank-container h1{
+    font-size: 4rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.thank-container p{
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.thank-container .redirect-link{
+    margin-top: 1.5rem;
+}
+
+.thank-container .redirect-link a{
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: .5s ease;
+}
+
+.thank-container .redirect-link a i{
+    background: var(--main-color);
+    color: var(--bg-color);
+    font-size: 2.2rem;
+    font-weight: 900;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem var(--main-color);
+    margin-left: 1rem;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.thank-container .redirect-link a:hover{
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.thank-container .redirect-link a:hover i{
+    box-shadow: none;
+}
 
 /* --------- cursor -------- */
 .cursor {

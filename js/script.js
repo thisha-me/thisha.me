@@ -69,6 +69,10 @@ const typed=new Typed('.multiple-text',{
 const cursor = document.querySelector('.cursor');
 var timeout;
 
+window.onload=()=>{
+    cursor.style.display="none";
+}
+
 document.addEventListener('mousemove', e => {
     cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px; display:block;")
     function mouseStopped(){
