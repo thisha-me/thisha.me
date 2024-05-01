@@ -1,8 +1,8 @@
 //--------------------------Loading Screen---------------------------
-var loader=document.getElementById("preloader");
-window.addEventListener("load",()=>{
-    loader.style.display="none";
-})
+// var loader=document.getElementById("preloader");
+// window.addEventListener("load",()=>{
+//     loader.style.display="none";
+// })
 
 
 //----------------------toggle icon nav bar----------------------------
